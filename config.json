@@ -1,0 +1,82 @@
+{
+  "coins": {
+    "ETHUSDT": {
+      "showas": "ETH",
+      "coingecko": "ethereum"
+    },
+    "BTCUSDT": {
+      "showas": "BTC",
+      "coingecko": "bitcoin"
+    },
+    "DOTUSDT": {
+      "showas": "DOT",
+      "coingecko": "polkadot"
+    },
+    "THETAUSDT": {
+      "showas": "THETA",
+      "coingecko": "theta-network"
+    },
+    "ADAUSDT": {
+      "showas": "ADA",
+      "coingecko": "cardano"
+    },
+    "LINKUSDT": {
+      "showas": "LINK",
+      "coingecko": "chainlink"
+    },
+    "XTZUSDT": {
+      "showas": "XTZ",
+      "coingecko": "tezos"
+    },
+    "NANOUSDT": {
+      "showas": "NANO",
+      "coingecko": "nano"
+    },
+    "BANDUSDT":{
+      "showas": "BAND",
+      "coingecko": "band-protocol"
+    }
+  },
+  "newsSites": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/"
+    },
+    {
+      "name": "Bitfinanzas",
+      "url": "https://bitfinanzas.com"
+    }
+  ],
+  "socials": [
+    {
+      "name": "Crypto Thai",
+      "url": "https://twitter.com/crypto_thai"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/"
+    }
+  ],
+  "analysisTools": [
+    {
+      "name": "My Trading View",
+      "url": "https://www.tradingview.com/chart/CHARTID"
+    },
+    {
+      "name": "CoinMarketCap",
+      "url": "https://coinmarketcap.com/"
+    },
+    {
+      "name": "Coingecko",
+      "url": "https://www.coingecko.com/en"
+    },
+    {
+      "name": "Coindesk",
+      "url": "https://www.coindesk.com/"
+    },
+    {
+      "name": "Glassnode",
+      "url": "https://studio.glassnode.com/"
+    }
+  ]
+}

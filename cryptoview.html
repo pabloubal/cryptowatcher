@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="cryptos.css">
+    <script>
+      intervals=["60", "240", "D", "W"]
+
+      function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[#&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      function addViews() {
+        coin = getParameterByName('coin')
+        for(i=1; i<=intervals.length; i++){
+          let box = document.createElement('div')
+          box.className='box'
+
+          let container = document.createElement('div')
+          container.className='tradingview-widget-container'
+
+          let canvas = document.createElement('div')
+          canvas.id='canvas_'+i
+
+          let scriptElm = document.createElement('script');
+          let inlineCode = document.createTextNode('new TradingView.widget({"autosize": true,"symbol": "BINANCE:"+coin,"interval": intervals[i-1],"timezone": "Etc/UTC","theme": "dark","style": "1","locale": "en","toolbar_bg": "#f1f3f6","enable_publishing": false,"allow_symbol_change": true,"container_id": "canvas_"+i});');
+          scriptElm.setAttribute('type', 'text/javascript');
+
+          scriptElm.appendChild(inlineCode); 
+          container.appendChild(canvas)
+          container.appendChild(scriptElm)
+          box.appendChild(container)
+          document.body.appendChild(box)
+        }
+      }
+    </script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  </head>
+  <body>
+    <script>
+      addViews();
+    </script>
+  </body>
+</html>
